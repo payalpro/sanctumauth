@@ -20,6 +20,7 @@ Route::get('/', function () {
 
 
 Auth::routes();
+
 Route::get('user/show', 'NotificationController@get_users')->name('user.show');
 Route::get('storenotification', 'NotificationController@store_data')->name('storenotification');
 
